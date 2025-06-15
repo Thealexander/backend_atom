@@ -19,13 +19,18 @@ Este es el backend del proyecto ATOM, construido con **Node.JS**, **TypeScript**
 ├── src/
 │ ├── app.ts # Inicialización de Express
 │ ├── index.ts # Punto de entrada principal
-│ ├── firebase.ts # Configuración de Firebase Admin SDK
-│ ├── routes/ # Definición de endpoints
-│ ├── controllers/ # Lógica de control
-│ ├── services/ # Reglas de negocio
-│ ├── domain/ # Entidades del dominio
-│ ├── repositories/ # Acceso a datos
-│ ├── middlewares/ # Middlewares como auth
+| ├── application
+|      ├── use-cases
+|        ├── auth
+|        ├── tasks
+|  ├── domain
+|      ├── interfaces
+|  ├── infraestructure
+|      ├── firebase
+|      ├── http
+|           ├── controllers
+|      ├── routes
+|      ├── middlewares      
 │ └── tests/ # Pruebas unitarias
 
 ## Configuración inicial
@@ -62,3 +67,8 @@ DELETE /api/task/:id
 
 ## Documentación de la API
 https://documenter.getpostman.com/view/19671366/2sB2x8DqxJ
+
+## Frontend Repository
+github.com/Thealexander/frontend_atom
+
+## Testing Server
