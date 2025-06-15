@@ -28,7 +28,7 @@ Este es el backend del proyecto ATOM, construido con **Node.JS**, **TypeScript**
 │ ├── middlewares/ # Middlewares como auth
 │ └── tests/ # Pruebas unitarias
 
-## ⚙ Configuración inicial
+## Configuración inicial
 1. instalar dependencias en terminal y ubicado en el proyecto
 npm install
 
@@ -47,3 +47,18 @@ SERVICE_ACCOUNT_PATH=./config/serviceAccountKey.json
 5. ejecutar proyecto:
 - npx ts-node src/index.ts (para modo desarrollo)
 - ng test --watch=false (para pruebas)
+
+## ENDPOINTS
+
+POST /api/auth/signup
+POST /api/auth/signin
+GET /api/auth/getMe
+
+POST /api/tasks -Crear task
+PATCH /api/tasks/?:id/status -cambiar estatus de una tarea
+GET /api/task/?status=pending&assignedTo= :id/ - Requiere JWT
+PUT /api/task/:id - Editar estado
+DELETE /api/task/:id
+
+## Documentación de la API
+https://documenter.getpostman.com/view/19671366/2sB2x8DqxJ
