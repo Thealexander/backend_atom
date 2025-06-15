@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "scripts": {
+    "test": "JWT_SECRET=tu_secreto_para_pruebas_muy_seguro_y_largo jest"
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "types": ["jest", "node"]
+  },
+  "include": ["src/**/*"]
+}
