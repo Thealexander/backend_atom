@@ -72,3 +72,5 @@ https://documenter.getpostman.com/view/19671366/2sB2x8DqxJ
 github.com/Thealexander/frontend_atom
 
 ## Testing Server
+https://api-nuxoiaxfea-uc.a.run.app --->api
+https://atombackend-52e86.web.app/task  --->webservice
